@@ -1,12 +1,13 @@
 # WhatsApp Text Translator
 
-A simple Chrome extension that adds a **Translate & Insert** button to WhatsApp Web, allowing you to translate German messages to English on the fly using OpenAI's GPT-3.5-turbo API.
+A simple Chrome extension that adds a **Translate & Insert** button to WhatsApp Web, allowing you to translate messages between customizable source and target languages on the fly using OpenAI's GPT-3.5-turbo API.
 
 ## Features
 
 - Detects the WhatsApp Web composer and injects a button.
-- Sends your German text to OpenAI for translation.
-- Clears the original text and inserts the English translation line by line.
+- Sends your text to OpenAI for translation.
+- Clears the original text and inserts the translated text line by line.
+- Allows customizing source and target languages by modifying the prompt in `content.js`.
 
 ## Files
 
@@ -52,6 +53,7 @@ const OPENAI_API_KEY = "sk-...";
 
 - If the button does not appear, make sure you are on `https://web.whatsapp.com/` and reload the page/extension.
 - Check the console for errors (press `F12`) to verify API calls and selectors.
+- **Original text may not be completely removed** due to WhatsApp Web's internal handling; you might need to manually clear the German text before clicking the button.
 
 ## Contributing
 
