@@ -6,6 +6,7 @@ A simple Chrome extension that adds a **Translate & Insert** button to WhatsApp 
 
 - Detects the WhatsApp Web composer and injects a button.
 - Sends your text to OpenAI for translation.
+- Clears the original text and inserts the translated text line by line.
 - Allows customizing source and target languages by modifying the prompt in `content.js`.
 
 ## Files
@@ -56,7 +57,7 @@ const OPENAI_API_KEY = "sk-...";
 
 ## Contributing
 
-Feel free to open issues or submit pull requests for bug fixes and improvements.
+Feel free to open issues or submit pull requests for bug fixes and improvements. Contributions are welcome, especially solutions that ensure the original German text is fully cleared before translation.
 
 ## License
 
